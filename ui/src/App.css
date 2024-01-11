@@ -1,0 +1,367 @@
+html {
+  background: #f0f2f5;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(79deg, lightseagreen, rgb(195, 150, 206) 48%, lightblue);
+}
+.container {
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.container, .loginScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container, .registerScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  text-align: left;
+  padding: 0.25 rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.invalid {
+  border: 1px solid #dd3c10;
+  background-color: #ffebe8;
+}
+
+.submitButton {
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  vertical-align: center;
+}
+
+.copyLink {
+  border: none;
+  color: black; 
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 500;
+}
+
+.underlinedTextButton {
+  border: none;
+  background: none;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  width: auto;
+}
+
+.loginLabel {
+  padding: 0.75rem;
+  font-size: 1.5rem;
+}
+
+
+.registerLabel {
+  padding: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.defaultButton {
+  display: flex; 
+  justify-content: center;
+  color: #000;
+  height: auto; 
+}
+
+/*Register page stuff*/
+
+.input-with-icon-div {
+  display: flex;
+  flex-direction: row;
+  border-color: #000;
+  padding-bottom: 10;
+}
+
+.iconInput {
+  width: 95%;
+
+}
+
+.icon-span {
+  cursor: pointer;
+  transform: translateY(25%);
+}
+
+.icon-span-login {
+  position: absolute;
+  cursor: pointer;
+  transform: translateY(185px);
+  margin-right: 15px;
+
+}
+
+.requirements-box {
+  font-size: 14px;
+  background: #2a3c5e;
+  font-weight: 650;
+  color: #fff;
+  letter-spacing: 0.09em;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.requirements-box div {
+  margin: 5px;
+}
+
+.requirements-box .validated {
+  color: rgb(211, 211, 211);
+}
+
+.reqIcon {
+  margin-right: 10px;
+  stroke: black;
+  stroke-width: 2;
+}
+
+.reqIcon.green {
+  color: #0f0;
+}
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
+.main_container {
+  width: 100%;
+  /* min-height: 100vh; */
+  background-image: linear-gradient(79deg, lightseagreen, rgb(195, 150, 206) 48%, lightblue);
+  padding: 20px 0px;
+}
+
+.main_container header {
+  width: 92%;
+  margin: auto;
+  border-radius: 4px;
+  border: 1px solid black;
+  background-color: #8faadc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+
+.main_container header h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.main_container h2 {
+  text-align: center;
+  margin-top: 60px;
+  color: black;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.main_container p {
+  text-align: center;
+  margin-top: 55px;
+  color: black;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.code_box {
+  margin: 45px auto;
+  border: 1px solid black;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  max-width: 750px;
+}
+
+.copyCode {
+  border: none;
+  color: black; 
+  height: auto;
+  background-color: white;
+  margin-left: 400px;
+  position: right;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 500;
+  
+}
+
+.code_box span {
+  text-align: center;
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.invite_link_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 60px auto;
+}
+
+.copy_link_box {
+  border: 1px solid black;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.copy_link_box:hover {
+  background-color: #00000050;
+  transition: all 150ms ease-in-out;
+}
+
+.invite_link_container a {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.CalendarApp {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(79deg, lightseagreen, rgb(195, 150, 206) 48%, lightblue);
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+
+
+/*Event creation*/
+
+.EventCreation {
+  width:100%;
+  text-align: center;
+  align-items: top;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.ColumnTitle {
+  background-color: white;
+  font-size: 32px;
+  font-weight: 600;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+}
+
+.DurationTitle {
+  background-color: white;
+  color: #3355cc;
+  font-size: 24px;
+  font-weight: 600;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+}
+
+.TimeZoneDiv {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height:299px;
+  width: 503px;
+}
+
+
+
+.EventTitle {
+  background-color: white;
+  color: #3355cc;
+  font-size: 64px;
+  font-weight: bold;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+}
+
+
+
+/*Participants page*/
+
+.datePanelContainer {
+  width: 500px;
+}
+
+
+/*grid stuff*/
+
+.gridContainer {
+  display: grid;
+  width: auto;
+}
+
+.innerGrid {
+  display: grid;
+  fill: white;
+  
+}
+
+.grid-row {
+  display: flex;
+  
+}
+
+.grid-cell {
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 15px;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+
+}
+
+.grid-cell.selected {
+  background-color: #a0c4ff;
+}
+
+.coordinates-textbox {
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+}
